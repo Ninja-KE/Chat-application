@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="/socket.io/socket.io.js")
+        script(src="/public/jquery-3.6.3.min.js")
+        link(rel="stylesheet", href="/public/bootstrap/journal.min.css")  
+        link(rel="stylesheet", href="/public/css/styles.css")
+        title= title 
+    body 
+        .container-fluid(class="p-5" id="header")
+            h1= h1
+        .container-fluid(class="m-3 p-5")
+            block heading 
+            block content
